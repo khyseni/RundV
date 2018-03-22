@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180322 12:39:56.737" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="C:\Users\kreshnik.IMBUS\Desktop\RobotFr\RundV\Tests" id="s1" name="Tests">
+<suite source="C:\Users\kreshnik.IMBUS\Desktop\RobotFr\RundV\Tests\elderscare.robot" id="s1-s1" name="Elderscare">
+<test id="s1-s1-t1" name="Search Private Health + Care">
+<kw type="setup" name="Begin Web Test" library="common">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${ROOT}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180322 12:39:56.912" level="INFO">Opening browser 'ff' to base url 'https://www.ruv.de/'</msg>
+<status status="PASS" endtime="20180322 12:40:04.521" starttime="20180322 12:39:56.912"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180322 12:40:04.590" starttime="20180322 12:40:04.522"></status>
+</kw>
+<status status="PASS" endtime="20180322 12:40:04.592" starttime="20180322 12:39:56.911"></status>
+</kw>
+<kw name="Go To Page" library="PageObjectLibrary">
+<tags>
+<tag>page-object</tag>
+<tag>selenium</tag>
+</tags>
+<doc>Go to the url for the given page object</doc>
+<arguments>
+<arg>${Page}</arg>
+</arguments>
+<msg timestamp="20180322 12:40:04.625" level="INFO">Opening url 'https://www.ruv.de/privatkunden/altersvorsorge'</msg>
+<status status="PASS" endtime="20180322 12:40:06.356" starttime="20180322 12:40:04.598"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20180322 12:40:09.357" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180322 12:40:09.357" starttime="20180322 12:40:06.357"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(text(),'Rentner')]</arg>
+</arguments>
+<msg timestamp="20180322 12:40:09.358" level="INFO">Clicking element '//*[contains(text(),'Rentner')]'.</msg>
+<status status="PASS" endtime="20180322 12:40:09.626" starttime="20180322 12:40:09.358"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180322 12:40:10.629" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180322 12:40:10.630" starttime="20180322 12:40:09.628"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(text(),'Weiter')]</arg>
+</arguments>
+<msg timestamp="20180322 12:40:10.633" level="INFO">Clicking element '//*[contains(text(),'Weiter')]'.</msg>
+<status status="PASS" endtime="20180322 12:40:10.938" starttime="20180322 12:40:10.632"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180322 12:40:11.939" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180322 12:40:11.940" starttime="20180322 12:40:10.939"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(text(),'Single')]</arg>
+</arguments>
+<msg timestamp="20180322 12:40:11.943" level="INFO">Clicking element '//*[contains(text(),'Single')]'.</msg>
+<status status="PASS" endtime="20180322 12:40:12.206" starttime="20180322 12:40:11.942"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180322 12:40:13.208" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180322 12:40:13.208" starttime="20180322 12:40:12.207"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(text(),'Weiter')]</arg>
+</arguments>
+<msg timestamp="20180322 12:40:13.213" level="INFO">Clicking element '//*[contains(text(),'Weiter')]'.</msg>
+<status status="PASS" endtime="20180322 12:40:13.459" starttime="20180322 12:40:13.212"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180322 12:40:14.460" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180322 12:40:14.460" starttime="20180322 12:40:13.460"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(text(),'nein')]</arg>
+</arguments>
+<msg timestamp="20180322 12:40:14.461" level="INFO">Clicking element '//*[contains(text(),'nein')]'.</msg>
+<status status="PASS" endtime="20180322 12:40:14.715" starttime="20180322 12:40:14.461"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180322 12:40:15.716" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180322 12:40:15.716" starttime="20180322 12:40:14.716"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(text(),'Weiter')]</arg>
+</arguments>
+<msg timestamp="20180322 12:40:15.717" level="INFO">Clicking element '//*[contains(text(),'Weiter')]'.</msg>
+<status status="PASS" endtime="20180322 12:40:15.963" starttime="20180322 12:40:15.717"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180322 12:40:16.964" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180322 12:40:16.964" starttime="20180322 12:40:15.963"></status>
+</kw>
+<kw name="Drag And Drop By Offset" library="Selenium2Library">
+<doc>Drags element identified with `source` which is a locator.</doc>
+<arguments>
+<arg>${drg}</arg>
+<arg>0</arg>
+<arg>370</arg>
+</arguments>
+<status status="PASS" endtime="20180322 12:40:17.589" starttime="20180322 12:40:16.966"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20180322 12:40:20.590" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180322 12:40:20.590" starttime="20180322 12:40:17.590"></status>
+</kw>
+<kw type="teardown" name="End Web Test" library="common">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20180322 12:40:20.954" starttime="20180322 12:40:20.596"></status>
+</kw>
+<status status="PASS" endtime="20180322 12:40:20.954" starttime="20180322 12:40:20.595"></status>
+</kw>
+<status status="PASS" endtime="20180322 12:40:20.955" critical="yes" starttime="20180322 12:39:56.910"></status>
+</test>
+<doc>-Health Care Test Suite-</doc>
+<status status="PASS" endtime="20180322 12:40:20.956" starttime="20180322 12:39:56.765"></status>
+</suite>
+<suite source="C:\Users\kreshnik.IMBUS\Desktop\RobotFr\RundV\Tests\healthcare.robot" id="s1-s2" name="Healthcare">
+<test id="s1-s2-t1" name="Search Private Health + Care">
+<kw type="setup" name="Begin Web Test" library="common">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${ROOT}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180322 12:40:20.969" level="INFO">Opening browser 'ff' to base url 'https://www.ruv.de/'</msg>
+<status status="PASS" endtime="20180322 12:40:28.952" starttime="20180322 12:40:20.968"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180322 12:40:29.015" starttime="20180322 12:40:28.953"></status>
+</kw>
+<status status="PASS" endtime="20180322 12:40:29.016" starttime="20180322 12:40:20.968"></status>
+</kw>
+<kw name="Go To Page" library="PageObjectLibrary">
+<tags>
+<tag>page-object</tag>
+<tag>selenium</tag>
+</tags>
+<doc>Go to the url for the given page object</doc>
+<arguments>
+<arg>${Page}</arg>
+</arguments>
+<msg timestamp="20180322 12:40:29.063" level="INFO">Opening url 'https://www.ruv.de/privatkunden/gesundheit-pflege'</msg>
+<status status="PASS" endtime="20180322 12:40:30.045" starttime="20180322 12:40:29.016"></status>
+</kw>
+<kw name="Answer Questions" library="HealthCarePage">
+<arguments>
+<arg>@{Ans}</arg>
+</arguments>
+<msg timestamp="20180322 12:40:30.070" level="INFO">Clicking element 'xpath=//*[contains(text(),"Arbeitnehmer")]'.</msg>
+<msg timestamp="20180322 12:40:30.349" level="INFO">Clicking link 'Weiter'.</msg>
+<msg timestamp="20180322 12:40:30.699" level="INFO">Clicking element 'xpath=//*[contains(text(),"privat versichert")]'.</msg>
+<msg timestamp="20180322 12:40:31.011" level="INFO">Clicking link 'Weiter'.</msg>
+<msg timestamp="20180322 12:40:31.505" level="INFO">Clicking element 'xpath=//*[contains(text(),"Die private Krankenversicherung wechseln")]'.</msg>
+<msg timestamp="20180322 12:40:31.790" level="INFO">Clicking link 'Weiter'.</msg>
+<status status="PASS" endtime="20180322 12:40:32.053" starttime="20180322 12:40:30.046"></status>
+</kw>
+<kw name="Check Results" library="HealthCarePage">
+<arguments>
+<arg>@{Ans}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 12:40:32.371" starttime="20180322 12:40:32.056"></status>
+</kw>
+<kw type="teardown" name="End Web Test" library="common">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20180322 12:40:32.737" starttime="20180322 12:40:32.371"></status>
+</kw>
+<status status="PASS" endtime="20180322 12:40:32.738" starttime="20180322 12:40:32.371"></status>
+</kw>
+<doc>-Test: Answer 3 questions to find out the product you are looking for</doc>
+<status status="PASS" endtime="20180322 12:40:32.738" critical="yes" starttime="20180322 12:40:20.967"></status>
+</test>
+<doc>-Health Care Test Suite-</doc>
+<status status="PASS" endtime="20180322 12:40:32.739" starttime="20180322 12:40:20.960"></status>
+</suite>
+<suite source="C:\Users\kreshnik.IMBUS\Desktop\RobotFr\RundV\Tests\home.robot" id="s1-s3" name="Home">
+<test id="s1-s3-t1" name="Select all products">
+<kw type="setup" name="Begin Web Test" library="common">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${ROOT}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180322 12:40:32.750" level="INFO">Opening browser 'ff' to base url 'https://www.ruv.de/'</msg>
+<status status="PASS" endtime="20180322 12:40:40.762" starttime="20180322 12:40:32.750"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180322 12:40:40.817" starttime="20180322 12:40:40.762"></status>
+</kw>
+<status status="PASS" endtime="20180322 12:40:40.817" starttime="20180322 12:40:32.749"></status>
+</kw>
+<kw name="Go To Page" library="PageObjectLibrary">
+<tags>
+<tag>page-object</tag>
+<tag>selenium</tag>
+</tags>
+<doc>Go to the url for the given page object</doc>
+<arguments>
+<arg>${Page}</arg>
+</arguments>
+<msg timestamp="20180322 12:40:40.853" level="INFO">Opening url 'https://www.ruv.de/home/'</msg>
+<status status="PASS" endtime="20180322 12:40:41.581" starttime="20180322 12:40:40.818"></status>
+</kw>
+<kw name="Choose Product" library="HomePage">
+<arguments>
+<arg>${Product}</arg>
+</arguments>
+<msg timestamp="20180322 12:40:41.582" level="INFO">Selecting index(es) '0' from list 'name=Unsere Top-Produkte'.</msg>
+<status status="PASS" endtime="20180322 12:40:41.626" starttime="20180322 12:40:41.582"></status>
+</kw>
+<kw type="teardown" name="End Web Test" library="common">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20180322 12:40:41.936" starttime="20180322 12:40:41.626"></status>
+</kw>
+<status status="PASS" endtime="20180322 12:40:41.937" starttime="20180322 12:40:41.626"></status>
+</kw>
+<doc>-Select all products item from the menu</doc>
+<status status="PASS" endtime="20180322 12:40:41.937" critical="yes" starttime="20180322 12:40:32.749"></status>
+</test>
+<doc>-Home page Test Suite-</doc>
+<status status="PASS" endtime="20180322 12:40:41.939" starttime="20180322 12:40:32.742"></status>
+</suite>
+<suite source="C:\Users\kreshnik.IMBUS\Desktop\RobotFr\RundV\Tests\login.robot" id="s1-s4" name="Login">
+<test id="s1-s4-t1" name="Invalid Login">
+<kw type="setup" name="Begin Web Test" library="common">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${ROOT}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180322 12:40:41.947" level="INFO">Opening browser 'ff' to base url 'https://www.ruv.de/'</msg>
+<status status="PASS" endtime="20180322 12:40:49.415" starttime="20180322 12:40:41.947"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180322 12:40:49.486" starttime="20180322 12:40:49.416"></status>
+</kw>
+<status status="PASS" endtime="20180322 12:40:49.488" starttime="20180322 12:40:41.947"></status>
+</kw>
+<kw name="Go To Page" library="PageObjectLibrary">
+<tags>
+<tag>page-object</tag>
+<tag>selenium</tag>
+</tags>
+<doc>Go to the url for the given page object</doc>
+<arguments>
+<arg>${Page}</arg>
+</arguments>
+<msg timestamp="20180322 12:40:49.548" level="INFO">Opening url 'https://www.ruv.de/meinerv/public/login'</msg>
+<status status="PASS" endtime="20180322 12:40:50.217" starttime="20180322 12:40:49.491"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180322 12:40:52.219" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180322 12:40:52.219" starttime="20180322 12:40:50.218"></status>
+</kw>
+<kw name="Enter Username" library="LoginPage">
+<arguments>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20180322 12:40:52.222" level="INFO">Typing text 'kreshnik' into text field 'xpath=//*[@name='benutzername']'</msg>
+<status status="PASS" endtime="20180322 12:40:52.280" starttime="20180322 12:40:52.221"></status>
+</kw>
+<kw name="Enter Password" library="LoginPage">
+<arguments>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20180322 12:40:52.282" level="INFO">Typing text 'wrongpassword' into text field 'xpath=//*[@name='passwort']'</msg>
+<status status="PASS" endtime="20180322 12:40:52.326" starttime="20180322 12:40:52.282"></status>
+</kw>
+<kw name="Click Login Button" library="LoginPage">
+<msg timestamp="20180322 12:40:52.331" level="INFO">Clicking button 'id=loginBtn'.</msg>
+<status status="PASS" endtime="20180322 12:40:52.603" starttime="20180322 12:40:52.330"></status>
+</kw>
+<kw name="Invalid Credentials Message" library="LoginPage">
+<arguments>
+<arg>${Message}</arg>
+</arguments>
+<msg timestamp="20180322 12:40:52.604" level="INFO">Verifying element 'xpath=//*[@class='error errorcontainer']' contains exactly text 'Bitte überprüfen Sie Ihre Anmeldedaten.'.</msg>
+<status status="PASS" endtime="20180322 12:40:52.640" starttime="20180322 12:40:52.603"></status>
+</kw>
+<kw type="teardown" name="End Web Test" library="common">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20180322 12:40:52.967" starttime="20180322 12:40:52.641"></status>
+</kw>
+<status status="PASS" endtime="20180322 12:40:52.967" starttime="20180322 12:40:52.640"></status>
+</kw>
+<doc>-Verify that you cannot login with invalid data
+-Send invalid data
+-Check for the error message</doc>
+<status status="PASS" endtime="20180322 12:40:52.968" critical="yes" starttime="20180322 12:40:41.946"></status>
+</test>
+<doc>-User Login test suite</doc>
+<status status="PASS" endtime="20180322 12:40:52.969" starttime="20180322 12:40:41.941"></status>
+</suite>
+<status status="PASS" endtime="20180322 12:40:52.972" starttime="20180322 12:39:56.741"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="4">Critical Tests</stat>
+<stat fail="0" pass="4">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Tests" pass="4">Tests</stat>
+<stat fail="0" id="s1-s1" name="Elderscare" pass="1">Tests.Elderscare</stat>
+<stat fail="0" id="s1-s2" name="Healthcare" pass="1">Tests.Healthcare</stat>
+<stat fail="0" id="s1-s3" name="Home" pass="1">Tests.Home</stat>
+<stat fail="0" id="s1-s4" name="Login" pass="1">Tests.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
