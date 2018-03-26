@@ -1,10 +1,11 @@
 *** Variables ***
 ${BROWSER}   ff
 ${ROOT}      https://www.ruv.de/
-@{Ans}       Arbeitnehmer  privat versichert  Die private Krankenversicherung wechseln
+@{Ans}       Rentner  Single  nein
 ${Page}      EldersCarePage
 ${drg}       xpath=//div[@class='dragger']
 ${trg}       xpath=//div[@class='row']
+
 *** Settings ***
 Documentation                           -Elders Care Test Suite-
 Library                                 Selenium2Library
@@ -22,8 +23,7 @@ Test Teardown  End Web Test
 Search Altersvorsorge
     [Documentation]
     Go To Page              ${Page}
-
-    Answer Questions  Rentner  Single  nein
+    Answer Questions  @{Ans}
     sleep  1s
     drag and drop by offset  ${drg}  0  370
     click link  Weiter
