@@ -6,7 +6,7 @@ ${Page}      EldersCarePage
 ${drg}       xpath=//div[@class='dragger']
 ${trg}       xpath=//div[@class='row']
 *** Settings ***
-Documentation                           -Health Care Test Suite-
+Documentation                           -Elders Care Test Suite-
 Library                                 Selenium2Library
 Library                                 PageObjectLibrary
 Library                                 BuiltIn
@@ -19,24 +19,16 @@ Test Setup  Begin Web Test
 Test Teardown  End Web Test
 
 *** Test Cases ***
-Search Private Health + Care
+Search Altersvorsorge
     [Documentation]
     Go To Page              ${Page}
-    sleep                   3s
-    click element           //*[contains(text(),'Rentner')]
-    sleep                   1s
-    click element           //*[contains(text(),'Weiter')]
-    sleep                   1s
-    click element           //*[contains(text(),'Single')]
-    sleep                   1s
-    click element           //*[contains(text(),'Weiter')]
-    sleep                   1s
-    click element           //*[contains(text(),'nein')]
-    sleep                   1s
-    click element           //*[contains(text(),'Weiter')]
-    sleep                   1s
-    drag and drop by offset     ${drg}  0  370
+
+    Answer Questions  Rentner  Single  nein
+    sleep  1s
+    drag and drop by offset  ${drg}  0  370
+    click link  Weiter
+    Check Results  Rentner  Single  nein  niedrig
     #drag and drop          ${drg}  ${trg}
-    sleep                   3s
+
 
 
